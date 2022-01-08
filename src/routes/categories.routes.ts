@@ -6,7 +6,6 @@ import { CreateCategoryService } from "../services/CreateCategoryService";
 const categoriesRoutes = Router();
 const categoriesRepository = new CategoriesRepository();
 
-// Create Category
 categoriesRoutes.post("/", (request, response) => {
   const { name, description } = request.body;
 
